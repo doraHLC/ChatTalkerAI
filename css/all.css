@@ -749,7 +749,7 @@ h5 {
 
 @media (max-width: 768px) {
   .footer-box {
-    background: url(/img/footer_sm.svg) no-repeat center/cover;
+    background: url(../img/footer_sm.svg) no-repeat center/cover;
     height: 461px;
   }
 }
