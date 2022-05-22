@@ -488,7 +488,7 @@
         position: relative;
 
         @include pad {
-            background: url(/img/footer_sm.svg) no-repeat center / cover;
+            background: url(../img/footer_sm.svg) no-repeat center / cover;
             height: 461px;
         }
     }
