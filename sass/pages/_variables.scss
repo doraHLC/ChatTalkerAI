@@ -1,0 +1,21 @@
+$font-size-base: 1rem;
+$font-size-ss: $font-size-base * 0.75; //12px
+$font-size-sm: $font-size-base * 0.875; //14px
+$font-size-lg: $font-size-base * 1.125; //18px
+$font-size-llg: $font-size-base * 1.25; //20px
+$h1-font-size: $font-size-base * 3.5; //56px
+$h2-font-size: $font-size-base * 3; //48px
+$h3-font-size: $font-size-base * 2; //32px
+$h4-font-size: $font-size-base * 1.75; //28px
+$h5-font-size: $font-size-base * 1.5; //24px
+$h6-font-size: $font-size-base; //16px
+
+$font-family-main: "Noto Sans CJK TC", "Noto Sans TC", "Microsoft JhengHei", "PingFang", "STHeiti", sans-serif, serif;
+
+$font-family-eng: "Arial Black";
+$font-family-num: "Verdana";
+
+$colors-primary: #56C4C5;
+$colors-secondary: #FF5D50;
+$colors-tertiary: #F5CA52;
+

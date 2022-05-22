@@ -1,0 +1,302 @@
+.bgBoxPrice {
+    position: relative;
+    overflow: hidden;
+
+    &-PhotoCurve {
+        position: absolute;
+        width: 100%;
+        height: 470px;
+        border-radius: 0 0 0 300px;
+        background: #f7f9fd;
+        top: 0;
+        z-index: -15;
+
+        @include pad {
+            height: 495px;
+            border-radius: 0 0 0 150px;
+            top: 72px;
+            right: 0;
+        }
+    }
+
+    &-PhotoBanner {
+        position: absolute;
+        background: url(../img/banner.svg) center / cover;
+        width: 885px;
+        height: 559px;
+        top: 0;
+        right: 0;
+        z-index: -10;
+
+        @include pad {
+            background: url(../img/banner_sm.svg) center / cover;
+            max-width: 100%;
+            top: 72px;
+            left: 0;
+        }
+    }
+
+    &-PhotoCircle {
+        position: absolute;
+        background: url(../img/ball03.svg) center / cover;
+        width: 360px;
+        height: 360px;
+        top: 876px;
+        left: -266px;
+        z-index: -10;
+
+        @include lpc {
+            top: 1320px;
+        }
+    }
+}
+
+.bannerPrice {
+    padding: 0 120px 0;
+    margin: 116px 0 280px 0;
+
+    @include pad {
+        margin: 48px 0 460px 0;
+        padding: 0 20px;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+}
+
+.wrapPrice {
+    max-width: 904px;
+    margin: 0 auto;
+
+    @include xlpc {
+        padding: 0 8px;
+    }
+}
+
+.priceSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    @include mobile {
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        margin-bottom: 48px;
+        text-align: center;
+
+        @include mobile {
+            margin-bottom: 16px;
+        }
+    }
+
+    .rwdMobile {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+
+    &-list {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 48px;
+
+        @include pad {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include mobile {
+            margin-bottom: 32px;
+        }
+    }
+
+    &-item input {
+        padding: 12px 32px;
+        border-radius: 27px;
+        border: 1px solid $colors-primary;
+        cursor: pointer;
+        color: $colors-primary;
+        font-family: $font-family-main;
+        font-size: $font-size-lg;
+        background: #fff;
+
+        @include mobile {
+            padding: 8px 16px;
+            font-size: $font-size-base;
+            background: $colors-primary;
+            color: #fff;
+        }
+
+        &:hover {
+            background: $colors-primary;
+            color: #fff;
+        }
+    }
+
+    &-planInfoList {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+        @include lpc {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            gap: 24px;
+        }
+    }
+
+    &-planInfoItem {
+        width: 444px;
+        box-shadow: 0 2px 10px #00000014;
+        border-radius: 12px;
+        padding-top: 12px;
+        background: #fff;
+
+        @include mobile {
+            width: 100%;
+            padding-top: 0;
+        }
+
+        h5 {
+            text-align: center;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .planInfoItem-txt {
+            text-align: center;
+            line-height: 1.5;
+            margin-top: 32px;
+        }
+    }
+
+    .compareWrap {
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .compare {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-num {
+            width: 169px;
+            height: 108px;
+            padding: 24px 0;
+            background: #f5f5f5;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .num-txtSS {
+            font-size: $font-size-ss;
+            margin-bottom: 8px;
+
+            &-unit {
+                font-size: $font-size-ss;
+                margin-left: 8px;
+            }
+        }
+
+        .num-txtBig {
+            font-size: $h3-font-size;
+            font-family: $font-family-num;
+        }
+
+        .num-color {
+            color: $colors-primary;
+        }
+
+        .num-equals {
+            display: block;
+        }
+    }
+
+    .compareContent {
+        margin-top: 32px;
+
+        &-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .compareBtn {
+        align-self: center;
+        margin-top: 32px;
+    }
+}
+
+.qaPage {
+    h3 {
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .editItem {
+        border: 0;
+        box-shadow: 0 2px 10px #00000014;
+        border-radius: 12px;
+        background: #fff;
+        margin-bottom: 16px;
+    }
+
+    .editBtn::after {
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/icon_plus.svg);
+    }
+
+    .accordion-flush .accordion-item .editBtn {
+        box-shadow: 0 2px 10px #00000014;
+        border-radius: 12px;
+        margin-top: 16px;
+        padding: 16px 32px;
+        font-size: $font-size-lg;
+        font-weight: 600;
+
+        @include mobile {
+            font-size: $font-size-base;
+        }
+
+        &:not(.collapsed) {
+            color: $colors-primary;
+            background-color: #fff;
+            box-shadow: none;
+        }
+
+        &:not(.collapsed)::after {
+            width: 20px;
+            height: 20px;
+            background-image: url(../img/icon_minus.svg);
+        }
+
+        &:focus {
+            border-color: #fff;
+        }
+    }
+
+    .editBody {
+        line-height: 1.5;
+        padding: 0 32px 32px;
+        margin-top: 8px;
+        color: #747474;
+
+        @include mobile {
+            font-size: $font-size-base;
+        }
+    }
+}

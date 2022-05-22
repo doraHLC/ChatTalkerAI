@@ -1,0 +1,107 @@
+body {
+    font-family: $font-family-main;
+}
+
+.typeBtn-primary {
+    padding: 12px 32px;
+    border-radius: 27px;
+    background: $colors-primary;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: $font-family-main;
+    font-size: $font-size-lg;
+
+    &:hover {
+        background: $colors-tertiary;
+        color: #000;
+    }
+}
+
+.typeBtn-secondary {
+    padding: 8px 32px;
+    border-radius: 22px;
+    background: $colors-secondary;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: $font-family-main;
+
+    &:hover {
+        background: $colors-primary;
+        color: #000;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 120px 0;
+    margin-bottom: 54px;
+
+    @include pad {
+        padding: 16px 20px;
+        border-bottom: 2px solid $colors-tertiary;
+    }
+
+    &-title a {
+        background: url(../img/logo.png) no-repeat center / contain;
+        width: 218px;
+        height: 40px;
+        z-index: 2;
+        @include hide-text;
+    }
+}
+
+.topBtn {
+    display: block;
+    position: fixed;
+    background: url(/img/top.png) no-repeat center / contain;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 10;
+
+    @include pad {
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        right: 20px;
+    }
+}
+
+h2 {
+    font-size: $h2-font-size;
+    font-weight: 600;
+    line-height: 1.5;
+
+    @include xlpc {
+        font-size: $h2-font-size * 0.8;
+    }
+
+    @include pad {
+        font-size: $h2-font-size * 0.67;
+    }
+}
+
+h3 {
+    font-size: $h3-font-size;
+    font-weight: 600;
+    line-height: 1.5;
+
+    @include pad {
+        font-size: $h3-font-size * 0.875;
+    }
+}
+
+h4 {
+    font-weight: 600;
+}
+
+h5 {
+    font-size: $h5-font-size;
+    font-weight: 600;
+    line-height: 1.5;
+}
