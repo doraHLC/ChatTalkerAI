@@ -231,6 +231,13 @@
             display: flex;
             gap: 12px;
             margin-bottom: 16px;
+
+            &::before {
+                content: '';
+                background: url(../img/icon_check.svg) center / cover;;
+                width: 20px;
+                height: 16px;
+            }
         }
     }
 

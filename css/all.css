@@ -1058,6 +1058,13 @@ h5 {
   margin-bottom: 16px;
 }
 
+.priceSelect .compareContent-item::before {
+  content: '';
+  background: url(../img/icon_check.svg) center/cover;
+  width: 20px;
+  height: 16px;
+}
+
 .priceSelect .compareBtn {
   align-self: center;
   margin-top: 32px;
