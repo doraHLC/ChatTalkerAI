@@ -2,7 +2,6 @@
 .bgBox {
     max-width: 100%;
     position: relative;
-    overflow: hidden;
 
     &-PhotoCurve {
         position: absolute;
@@ -34,56 +33,39 @@
 
     &-PhotoCircle-A {
         position: absolute;
-        background: url(../img/ball01.svg) no-repeat center / cover;
-        width: 360px;
+        background: url(../img/ball01.svg) no-repeat right / cover;
+        width: 138px;
         height: 360px;
         z-index: -10;
         top: 588px;
-        left: -180px;
+        left: 0;
 
         @include pad {
-            width: 126px;
+            width: 49px;
             height: 126px;
             top: 740px;
-            left: -76px;
+            left: 0;
         }
     }
 
     &-PhotoCircle-B {
         position: absolute;
-        background: url(../img/ball02.svg) no-repeat center / cover;
-        width: 310px;
+        background: url(../img/ball02.svg) no-repeat left / cover;
+        width: 210px;
         height: 310px;
         z-index: -10;
         top: 1693px;
-        right: -155px;
+        right: 0;
 
         @include pad {
-            width: 135px;
+            width: 88px;
             height: 135px;
             top: 2250px;
-            right: -47px;
+            right: 0;
         }
 
         @include mobile {
             top: 3060px;
-        }
-    }
-
-    &-PhotoCircle-C {
-        position: absolute;
-        background: url(../img/ball03.svg) no-repeat center / cover;
-        width: 150px;
-        height: 150px;
-        z-index: -10;
-        top: 2710px;
-        left: 50px;
-
-        @include pad {
-            width: 153px;
-            height: 153px;
-            top: 3365px;
-            left: -76px;
         }
     }
 }
@@ -326,7 +308,7 @@
         }
 
         @include lpc {
-            width: 163px;
+            width: 160px;
         }
 
         @include pad {
@@ -388,9 +370,26 @@
 
 .comment {
     margin-bottom: 100px;
+    position: relative;
 
     @include pad {
         margin-bottom: 60px;
+    }
+
+
+    .bgBox-PhotoCircle-C {
+        position: absolute;
+        background: url(../img/ball03.svg) no-repeat center / cover;
+        width: 150px;
+        height: 150px;
+        z-index: -10;
+        top: 50px;
+        left: -100px;
+
+        @include pad {
+            width: 153px;
+            height: 153px;
+        }
     }
 
     h3 {
